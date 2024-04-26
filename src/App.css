@@ -1,0 +1,153 @@
+/* General Body and Container Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/* Home Page Styles */
+.home {
+  text-align: center;
+  padding: 50px;
+  background-color: #e9ecef;
+}
+
+/* About Page Styles */
+
+
+/* Admin Login Page Styles */
+.admin-login {
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.admin-login input,
+.admin-login button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.admin-login button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-login button:hover {
+  background-color: #0056b3;
+}
+
+/* Gallery Page Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Events Page Styles */
+.events {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.events img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 5px;
+}
+/* General Navbar Styling */
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for links and dropdown button */
+nav a, .dropbtn {
+  color: #f06292;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 12px;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Enhance hover effect */
+nav a:hover, .dropbtn:hover, .dropdown-content a:hover {
+  background-color: #f06292;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Dropdown Button Styling */
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  z-index: 1001;
+}
+
+.dropdown-content a {
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Ensures the dropdown opens on hover */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Container to align links */
+.left-links {
+  display: flex;
+  align-items: center;
+}

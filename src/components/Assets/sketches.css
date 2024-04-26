@@ -1,0 +1,46 @@
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 15px;
+    position: relative;
+    padding: 4.3rem 3rem;
+  }
+  
+  .collage-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .collage-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .collage-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .collage-info h2, .collage-info p {
+    margin: 0;
+  }
+  
+  .collage-item:hover .collage-image {
+    transform: scale(1.1);
+  }
+  
+  .collage-item:hover .collage-info {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  
